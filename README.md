@@ -51,3 +51,20 @@ Power BI Dashboard
 🚧 Project setup completed.
 
 The data engineering pipeline is currently under development.
+
+## Data Quality Findings
+
+### Initial Dataset Findings
+
+The raw Amazon retail dataset contains 128,975 rows and 24 columns.
+
+Initial validation identified:
+
+- Unnecessary columns: `index`, `Unnamed: 22`
+- Missing values in `Amount`
+- Missing values in `currency`
+- Missing values in shipping-related columns
+- Large number of missing values in `promotion-ids`
+- Large number of missing values in `fulfilled-by`
+- No complete duplicate rows were found
+- Date values were successfully validated
